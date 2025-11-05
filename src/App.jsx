@@ -1,5 +1,5 @@
-import { Navbar } from "./components/NavBar";
-import { Container } from "./components/Container";
+import { Navbar } from "./components/Navbar";
+import { Container } from "./components/container";
 import { ProductosList } from "./components/ProductosList";
 
 function App() {
