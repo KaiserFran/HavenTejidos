@@ -9,4 +9,4 @@ export const ProductoCard = ({ nombre, descripcion, precio, imagen }) => {
   );
 };
 
-export default ProductoCard;
+//export default ProductoCard;

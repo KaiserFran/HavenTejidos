@@ -1,5 +1,5 @@
 import { productos } from "../data/productos";
-import { ProductoCard } from "./productoCard";
+import { ProductoCard } from "./ProductoCard";
 
 export const ProductosList = () => {
   return (
@@ -10,4 +10,4 @@ export const ProductosList = () => {
     </div>
   );
 };
-export default ProductosList;
+//export default ProductosList;
