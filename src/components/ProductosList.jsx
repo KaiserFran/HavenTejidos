@@ -10,4 +10,4 @@ export const ProductosList = () => {
     </div>
   );
 };
-//export default ProductosList;
+export default ProductosList;
