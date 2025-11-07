@@ -1,3 +1,7 @@
+import honguitos from "../assets/honguitos.jpg"
+import porito from "../assets/porito.jpg"
+import flores from "../assets/flores.jpg"
+
 export const productos = [
   {
     id: 1,
