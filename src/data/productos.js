@@ -8,20 +8,20 @@ export const productos = [
     nombre: "Honguitos",
     descripcion: "colgates para mochilas",
     precio: 4500,
-    imagen: "/src/assets/honguitos.jpg"
+    imagen: honguitos,
   },
   {
     id: 2,
     nombre: "Caja De Flores",
     descripcion: "el mejor regalo para tu ser querido",
     precio: 8000,
-    imagen: "/src/assets/flores.jpg"
+    imagen: flores,
   },
   {
     id: 3,
     nombre: "Poro De LOL",
     descripcion: "Ideal para carrear bronces",
     precio: 10000,
-    imagen: "/src/assets/porito.jpg"
+    imagen: porito,
   }
 ];
