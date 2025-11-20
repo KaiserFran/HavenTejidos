@@ -4,13 +4,17 @@ export const useProductos = () => {
   return useQuery({
     queryKey: ["productos"],
     queryFn: async () => {
-      const res = await fetch("http://localhost:3000/productos");
+      const res = await fetch(
+        "https://api.jsonbin.io/v3/b/691f7073ae596e708f65f13d"
+      );
 
       if (!res.ok) {
         throw new Error("Error al cargar productos");
       }
 
-      return res.json();
+      const data = await res.json();
+
+      return data.record; // ← MUY IMPORTANTE
     },
   });
 };
