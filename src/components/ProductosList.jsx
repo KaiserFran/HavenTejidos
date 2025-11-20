@@ -1,6 +1,6 @@
 import React from "react";
 import { useProductos } from "../hooks/useProduct";
-import ProductoCard from "../components/productoCard";
+import ProductoCard from "../components/ProductoCard";
 
 export const ProductosList = ({ onSelectProduct }) => {
   const { data, isLoading, error } = useProductos();
