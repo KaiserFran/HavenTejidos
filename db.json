@@ -1,0 +1,25 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Honguitos",
+      "descripcion": "colgates para mochilas",
+      "precio": 4500,
+      "imagen": "/images/honguitos.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Caja De Flores",
+      "descripcion": "el mejor regalo para tu ser querido",
+      "precio": 8000,
+      "imagen": "/images/flores.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Poro De LOL",
+      "descripcion": "Ideal para carrear bronces",
+      "precio": 10000,
+      "imagen": "/images/porito.jpg"
+    }
+  ]
+}

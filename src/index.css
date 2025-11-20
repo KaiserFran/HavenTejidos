@@ -1,4 +1,4 @@
-/* ESTILO MAIN */
+/* NO TOQUES EL MAIN PORFAVOR */
 * {
   box-sizing: border-box;
 }
@@ -10,7 +10,7 @@ body {
   color: #e0e0e0;
 }
 
-/* NAVBAR */
+/* QUEDOOO EL NAVBAR */
 .navbar {
   background: linear-gradient(90deg, #121212, #1f1f1f);
   color: #00c6ff;
@@ -30,7 +30,7 @@ body {
   padding: 1rem;
 }
 
-/* LISTA */
+/* LISTA FACHA */
 .lista {
   display: flex;
   flex-wrap: wrap;
@@ -105,4 +105,98 @@ body {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #00ffaa;
+}
+
+/* Detalle / Modal */
+.detail-overlay {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.6), rgba(0,0,0,0.8));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 2rem;
+  backdrop-filter: blur(4px);
+}
+
+.detail-card {
+  width: min(720px, 96%);
+  background: linear-gradient(180deg, #121214, #0e0e10);
+  border: 1px solid rgba(0,198,255,0.12);
+  padding: 1.6rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+  position: relative;
+  color: #e6eef3;
+  transform: translateY(8px);
+  animation: popIn 180ms ease forwards;
+}
+
+@keyframes popIn {
+  from { opacity: 0; transform: translateY(16px) scale(.98); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.detail-close {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  background: transparent;
+  border: none;
+  font-size: 1.1rem;
+  color: #cfefff;
+  cursor: pointer;
+}
+
+.detail-img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  background: #0b0b0b;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.detail-title {
+  color: #00c6ff;
+  margin: 0.4rem 0;
+  text-transform: uppercase;
+}
+
+.detail-desc {
+  color: #bfc9d0;
+  margin: 0.4rem 0 0.8rem;
+}
+
+.detail-price {
+  color: #00ffaa;
+  font-weight: 700;
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+}
+
+.detail-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-end;
+  margin-top: 0.75rem;
+}
+
+/* Buttons (si no los tenés ya) */
+.btn {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.btn.primary {
+  background: linear-gradient(90deg,#00c6ff,#00ffaa);
+  color: #081018;
+  font-weight: 600;
+}
+.btn.ghost {
+  background: transparent;
+  border: 1px solid rgba(200,200,200,0.06);
+  color: #cbd5df;
 }
